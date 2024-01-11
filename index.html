@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Hasnath's Bank</title>
+  </head>
+  <body class="">
+    <header>
+      <h1 class="text-5xl text-center font-medium">
+        <span class="text-red-700">Hasnath's</span> Bank
+      </h1>
+    </header>
+
+    <main>
+      <!-- dep , with and balance -->
+      <section class="my-14">
+        <div class="w-3/4 mx-auto grid sm:grid-cols-3 gap-5 text-black font-bold text-center">
+          <!-- 1 -->
+          <div class="bg-red-200 p-10 hover:bg-sky-100">
+            <h4 class="text-2xl">Deposit</h4>
+            <h2 class="text-3xl">$ <span id="depo-total">00</span></h2>
+          </div>
+          <!-- 2 -->
+          <div class="bg-green-200 p-10 hover:bg-sky-200">
+            <h4 class="text-2xl">Withdraw</h4>
+            <h2 class="text-3xl">$ <span id="with-total">00</span></h2>
+          </div>
+          <!-- 3 -->
+          <div class="bg-blue-200 p-10 hover:bg-sky-300">
+            <h4 class="text-2xl">Balance</h4>
+            <h2 class="text-3xl">$ <span id="bal-total">00</span></h2>
+          </div>
+        </div>
+      </section>
+      <section class="mt-14">
+        <div class="w-3/4 mx-auto grid sm:grid-cols-2 gap-5 text-black font-bold">
+          <!-- 1 -->
+          <div class="bg-yellow-400 p-10 hover:bg-sky-500 text-center">
+            <h4 class="text-2xl">Your Deposit</h4>
+            <input
+              class="p-2 w-3/4 m-2 rounded-lg"
+              type="text"
+              name=""
+              id="dep-input-field"
+              placeholder="Amount You want to Deposit ?"
+            />
+            <button
+              id="dep-btn"
+              class="bg-white p-2 rounded-lg hover:bg-red-500"
+            >
+              Deposit
+            </button>
+          </div>
+          <!-- 2 -->
+          <div class="bg-violet-400 p-10 hover:bg-sky-500 text-center">
+            <h4 class="text-2xl">Your Withdraw</h4>
+            <input
+              class="p-2 w-3/4 m-2 rounded-lg"
+              type="text"
+              name=""
+              id="with-input-field"
+              placeholder="Amount You want to Withdraw ?"
+            />
+            <button
+              id="with-btn"
+              class="bg-white p-2 rounded-lg hover:bg-red-500"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+
+
+
+    <!--  -->
+    <script src="JS/utilities.js"></script>
+    <script src="JS/deposite.js"></script>
+    <script src="JS/withdraw.js"></script>
+  </body>
+</html>
